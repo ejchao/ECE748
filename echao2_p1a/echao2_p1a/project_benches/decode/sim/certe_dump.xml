@@ -1,0 +1,58 @@
+<certe_dump>
+  <instance type=" test_top "> 
+     uvm_test_top 
+  
+     <instance type=" decode_in_agent "> 
+        Agent 
+  
+        <instance type=" decode_in_coverage "> 
+           decode_in_coverage 
+  
+           <imp if_type = "uvm_analysis_imp" txn_type = "anonymous"> 
+              analysis_imp 
+           </imp> 
+        </instance> 
+  
+  
+        <instance type=" uvm_driver #(REQ,RSP) "> 
+           decode_in_driver 
+  
+           <port if_type = "uvm_analysis_port" txn_type = "anonymous"> 
+              rsp_port 
+           </port> 
+  
+           <port if_type = "uvm_seq_item_pull_port" txn_type = "anonymous"> 
+              seq_item_port 
+              <connection>  uvm_test_top.Agent.decode_in_sequencer.seq_item_export  </connection> 
+           </port> 
+        </instance> 
+  
+  
+        <instance type=" decode_in_monitor "> 
+           decode_in_monitor 
+  
+           <port if_type = "uvm_analysis_port" txn_type = "anonymous"> 
+              analysis_port 
+              <connection>  uvm_test_top.Agent.decode_in_coverage.analysis_imp  </connection> 
+           </port> 
+        </instance> 
+  
+  
+        <instance type=" uvm_sequencer "> 
+           decode_in_sequencer 
+  
+           <export if_type = "uvm_analysis_export" txn_type = "anonymous"> 
+              rsp_export 
+              <connection>  uvm_test_top.Agent.decode_in_sequencer.sqr_rsp_analysis_fifo.analysis_export  </connection> 
+           </export> 
+  
+           <imp if_type = "uvm_seq_item_pull_imp" txn_type = "anonymous"> 
+              seq_item_export 
+           </imp> 
+        </instance> 
+  
+     </instance> 
+  
+  </instance> 
+  
+  </certe_dump>

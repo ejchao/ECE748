@@ -1,0 +1,12 @@
+BEGIN 3:decode_in_if:fast__2:work
+    psr :  3:decode_in_monitor_bfm:fast__3:work 3:decode_in_driver_bfm:fast__3:work
+    instr_dout :  3:decode_in_monitor_bfm:fast__3:work 3:decode_in_driver_bfm:fast__3:work
+    npc_in :  3:decode_in_monitor_bfm:fast__3:work 3:decode_in_driver_bfm:fast__3:work
+    clock :  3:decode_in_monitor_bfm:fast__3:work 3:decode_in_driver_bfm:fast__3:work
+    reset :  3:decode_in_monitor_bfm:fast__3:work
+    enable_decode :  3:decode_in_monitor_bfm:fast__3:work 3:decode_in_driver_bfm:fast__3:work
+END 
+BEGIN 3:decode_in_if:fast__1:work
+    reset :  1:decode_test_pkg:fast:work
+    clock :  1:decode_test_pkg:fast:work
+END 

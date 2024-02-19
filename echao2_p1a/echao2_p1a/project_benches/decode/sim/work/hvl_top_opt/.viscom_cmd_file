@@ -1,0 +1,1 @@
+/mnt/apps/public/COE/mg_apps/questa2023.2_2/questasim/linux/VisualizerRls/bin/viscom -nolock -quiet -jmem_size 52494528 hdl_top hvl_top -o hvl_top_opt +designfile=design.bin -debug,livesim

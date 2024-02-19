@@ -1,0 +1,476 @@
+# VISUALIZERROOT = '/mnt/apps/public/COE/mg_apps/questa2023.2_2/questasim/linux_x86_64/VisualizerRls'
+# USER = 'echao2'
+# Mentor Graphics software version 2023.2_2 (Build on Jun  9 2023)
+# Copyright (C) 1999-2023 by Mentor Graphics All rights reserved.
+
+# vsim hvl_top_opt -sv_seed 1 +UVM_TESTNAME=test_top +UVM_VERBOSITY=UVM_HIGH +notimingchecks -suppress 8887 -visualizer=design.bin -qwavedb=+signal+memory+class+transaction -classdebug -uvmcontrol=all -do {set NoQuitOnFinish 1;onbreak {resume}; run -all; do wave.do; coverage save test_top.ucdb;}
+# vsim hvl_top_opt -sv_seed 1 "+UVM_TESTNAME=test_top" "+UVM_VERBOSITY=UVM_HIGH" "+notimingchecks" -suppress 8887 -visualizer=design.bin -qwavedb=+livesim+signal+memory+class+transaction -classdebug -uvmcontrol=all "+no_qwavedb_threading" 
+# Start time: 18:59:40 on Oct 08,2023
+# Loading Mentor Graphics Visualizer shared object '/mnt/apps/public/COE/mg_apps/questa2023.2_2/questasim/bin/../linux/VisualizerRls/bin/libqvisualizer.so'
+# //  Questa Sim
+# //  Version 2023.2_2 linux Jun  9 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.decode_in_if(fast)
+# Loading work.decode_in_monitor_bfm(fast)
+# Loading work.decode_in_driver_bfm(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.decode_in_pkg(fast)
+# Loading work.decode_test_pkg(fast)
+# Loading work.hdl_top_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.hdl_top(fast)
+# Loading work.decode_in_monitor_bfm_sv_unit(fast)
+# Loading work.decode_in_monitor_bfm(fast__3)
+# Loading work.decode_in_driver_bfm_sv_unit(fast)
+# Loading work.decode_in_driver_bfm(fast__3)
+# Loading work.hvl_top_sv_unit(fast)
+# Loading work.hvl_top(fast)
+# Loading /mnt/apps/public/COE/mg_apps/questa2023.2_2/questasim/uvm-1.1d/linux/uvm_dpi.so
+# Opening log file /tmp/visscratch.ZOm87d/hdloffice.log
+
+# 18:59:48: Loading design data...
+# 18:59:49: Loaded  design units
+# 18:59:49: Loaded  design hierarchy
+# 	 Class Filter File used = /mnt/apps/public/COE/mg_apps/questa2023.2_2/questasim/bin/../linux/VisualizerRls/bin/../config/uvmclassfilter.txt
+# set NoQuitOnFinish 1
+# 1
+# onbreak {resume}
+
+# run -all
+# 
+# *****************************************************************
+#    Using QuickLZ compression software.
+# *****************************************************************
+# 
+# Qwave threading will not be used.
+# qwavedb_dumpvars: Initiating qwavedb class logging
+# 
+# 	Loading class filter file '/mnt/apps/public/COE/mg_apps/questa2023.2_2/questasim/bin/../linux/VisualizerRls/bin/../config/uvmclassfilter.txt'
+# 
+# qwavedb_dumpvars: Done initiating qwavedb class logging
+# Mentor Graphics software version 2023.2_2 (Build number 0)
+# Copyright (C) 1999-2023 by Mentor Graphics All rights reserved.
+# qwavedb_dumpvars: Initiating qwavedb waveform capturing
+# 
+# 	Arrays of 1 unpacked dimension will be logged if they have 4096 or fewer elements
+# 
+# qwavedb_dumpvars: Done initiating qwavedb waveform capturing
+# 
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(all)
+# UVM_INFO @ 0: reporter [RNTST] Running test test_top...
+# UVM_INFO ../tb/tests/decode_test_pkg/src/test_top.svh(30) @ 0: uvm_test_top [uvm_test_top] 
+# 
+# Agent Configuration: 
+#     Monitor BFM: .hdl_top.monitor_bfm
+#     Driver BFM: .hdl_top.driver_bfm
+#     Active/Passive:  ACTIVE
+#     Enable Coverage:  ON
+#     Enable Transaction Viewing:  ON
+# 
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_agent.svh(22) @ 0: uvm_test_top.Agent [AGENT] decode_in_agent configured as ACTIVE
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(339) @ 0: reporter [Questa UVM] End Of Elaboration
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(14) @ 0: uvm_test_top.Agent.decode_in_driver [DRIVER] Requesting a transaction from the sequencer
+# **************************************************************************
+# * Questa UVM Transaction Recording Turned ON.                            *
+# * recording_detail has been set.                                         *
+# *  To turn off, set 'recording_detail' to off:                           *
+# * uvm_config_db#(int)            ::set(null, "", "recording_detail", 0); *
+# * uvm_config_db#(uvm_bitstream_t)::set(null, "", "recording_detail", 0); *
+# **************************************************************************
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(9) @ 65: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Requesting to send transaction to driver
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(13) @ 65: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Sending transaction to Driver: npc_in: 0x43e4, instr_dout: 0x1010111000000010, psr: 0x110, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(16) @ 65: uvm_test_top.Agent.decode_in_driver [DRIVER] Received a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(17) @ 65: uvm_test_top.Agent.decode_in_driver [DRIVER] Performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(21) @ 75: uvm_test_top.Agent.decode_in_driver [DRIVER] Done performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(22) @ 75: uvm_test_top.Agent.decode_in_driver [DRIVER] Sending transaction back to sequence through sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(14) @ 75: uvm_test_top.Agent.decode_in_driver [DRIVER] Requesting a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_monitor.svh(51) @ 75: uvm_test_top.Agent.decode_in_monitor [MONITOR_PROXY] npc_in: 0x43e4, instr_dout: 0x1010111000000010, psr: 0x110, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(42) @ 75: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Transaction received: npc_in: 0x43e4, instr_dout: 0x1010111000000010, psr: 0x110, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(44) @ 75: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Number of transactions received:           1
+# 
+# 
+# 
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(9) @ 75: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Requesting to send transaction to driver
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(13) @ 75: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Sending transaction to Driver: npc_in: 0xd764, instr_dout: 0x0110110101011101, psr: 0x010, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(16) @ 75: uvm_test_top.Agent.decode_in_driver [DRIVER] Received a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(17) @ 75: uvm_test_top.Agent.decode_in_driver [DRIVER] Performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(21) @ 85: uvm_test_top.Agent.decode_in_driver [DRIVER] Done performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(22) @ 85: uvm_test_top.Agent.decode_in_driver [DRIVER] Sending transaction back to sequence through sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(14) @ 85: uvm_test_top.Agent.decode_in_driver [DRIVER] Requesting a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_monitor.svh(51) @ 85: uvm_test_top.Agent.decode_in_monitor [MONITOR_PROXY] npc_in: 0xd764, instr_dout: 0x0110110101011101, psr: 0x010, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(42) @ 85: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Transaction received: npc_in: 0xd764, instr_dout: 0x0110110101011101, psr: 0x010, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(44) @ 85: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Number of transactions received:           2
+# 
+# 
+# 
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(9) @ 85: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Requesting to send transaction to driver
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(13) @ 85: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Sending transaction to Driver: npc_in: 0xd231, instr_dout: 0x1001011011111111, psr: 0x111, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(16) @ 85: uvm_test_top.Agent.decode_in_driver [DRIVER] Received a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(17) @ 85: uvm_test_top.Agent.decode_in_driver [DRIVER] Performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(21) @ 95: uvm_test_top.Agent.decode_in_driver [DRIVER] Done performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(22) @ 95: uvm_test_top.Agent.decode_in_driver [DRIVER] Sending transaction back to sequence through sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(14) @ 95: uvm_test_top.Agent.decode_in_driver [DRIVER] Requesting a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_monitor.svh(51) @ 95: uvm_test_top.Agent.decode_in_monitor [MONITOR_PROXY] npc_in: 0xd231, instr_dout: 0x1001011011111111, psr: 0x111, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(42) @ 95: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Transaction received: npc_in: 0xd231, instr_dout: 0x1001011011111111, psr: 0x111, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(44) @ 95: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Number of transactions received:           3
+# 
+# 
+# 
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(9) @ 95: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Requesting to send transaction to driver
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(13) @ 95: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Sending transaction to Driver: npc_in: 0x3a41, instr_dout: 0x0010100110100000, psr: 0x110, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(16) @ 95: uvm_test_top.Agent.decode_in_driver [DRIVER] Received a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(17) @ 95: uvm_test_top.Agent.decode_in_driver [DRIVER] Performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(21) @ 105: uvm_test_top.Agent.decode_in_driver [DRIVER] Done performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(22) @ 105: uvm_test_top.Agent.decode_in_driver [DRIVER] Sending transaction back to sequence through sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(14) @ 105: uvm_test_top.Agent.decode_in_driver [DRIVER] Requesting a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_monitor.svh(51) @ 105: uvm_test_top.Agent.decode_in_monitor [MONITOR_PROXY] npc_in: 0x3a41, instr_dout: 0x0010100110100000, psr: 0x110, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(42) @ 105: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Transaction received: npc_in: 0x3a41, instr_dout: 0x0010100110100000, psr: 0x110, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(44) @ 105: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Number of transactions received:           4
+# 
+# 
+# 
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(9) @ 105: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Requesting to send transaction to driver
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(13) @ 105: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Sending transaction to Driver: npc_in: 0x80c2, instr_dout: 0x0000101110101001, psr: 0x011, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(16) @ 105: uvm_test_top.Agent.decode_in_driver [DRIVER] Received a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(17) @ 105: uvm_test_top.Agent.decode_in_driver [DRIVER] Performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(21) @ 115: uvm_test_top.Agent.decode_in_driver [DRIVER] Done performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(22) @ 115: uvm_test_top.Agent.decode_in_driver [DRIVER] Sending transaction back to sequence through sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(14) @ 115: uvm_test_top.Agent.decode_in_driver [DRIVER] Requesting a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_monitor.svh(51) @ 115: uvm_test_top.Agent.decode_in_monitor [MONITOR_PROXY] npc_in: 0x80c2, instr_dout: 0x0000101110101001, psr: 0x011, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(42) @ 115: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Transaction received: npc_in: 0x80c2, instr_dout: 0x0000101110101001, psr: 0x011, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(44) @ 115: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Number of transactions received:           5
+# 
+# 
+# 
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(9) @ 115: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Requesting to send transaction to driver
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(13) @ 115: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Sending transaction to Driver: npc_in: 0xbeae, instr_dout: 0x1110101100001001, psr: 0x101, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(16) @ 115: uvm_test_top.Agent.decode_in_driver [DRIVER] Received a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(17) @ 115: uvm_test_top.Agent.decode_in_driver [DRIVER] Performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(21) @ 125: uvm_test_top.Agent.decode_in_driver [DRIVER] Done performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(22) @ 125: uvm_test_top.Agent.decode_in_driver [DRIVER] Sending transaction back to sequence through sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(14) @ 125: uvm_test_top.Agent.decode_in_driver [DRIVER] Requesting a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_monitor.svh(51) @ 125: uvm_test_top.Agent.decode_in_monitor [MONITOR_PROXY] npc_in: 0xbeae, instr_dout: 0x1110101100001001, psr: 0x101, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(42) @ 125: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Transaction received: npc_in: 0xbeae, instr_dout: 0x1110101100001001, psr: 0x101, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(44) @ 125: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Number of transactions received:           6
+# 
+# 
+# 
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(9) @ 125: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Requesting to send transaction to driver
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(13) @ 125: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Sending transaction to Driver: npc_in: 0xe31d, instr_dout: 0x0110010111111110, psr: 0x111, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(16) @ 125: uvm_test_top.Agent.decode_in_driver [DRIVER] Received a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(17) @ 125: uvm_test_top.Agent.decode_in_driver [DRIVER] Performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(21) @ 135: uvm_test_top.Agent.decode_in_driver [DRIVER] Done performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(22) @ 135: uvm_test_top.Agent.decode_in_driver [DRIVER] Sending transaction back to sequence through sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(14) @ 135: uvm_test_top.Agent.decode_in_driver [DRIVER] Requesting a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_monitor.svh(51) @ 135: uvm_test_top.Agent.decode_in_monitor [MONITOR_PROXY] npc_in: 0xe31d, instr_dout: 0x0110010111111110, psr: 0x111, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(42) @ 135: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Transaction received: npc_in: 0xe31d, instr_dout: 0x0110010111111110, psr: 0x111, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(44) @ 135: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Number of transactions received:           7
+# 
+# 
+# 
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(9) @ 135: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Requesting to send transaction to driver
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(13) @ 135: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Sending transaction to Driver: npc_in: 0xa4e0, instr_dout: 0x0111000111110000, psr: 0x100, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(16) @ 135: uvm_test_top.Agent.decode_in_driver [DRIVER] Received a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(17) @ 135: uvm_test_top.Agent.decode_in_driver [DRIVER] Performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(21) @ 145: uvm_test_top.Agent.decode_in_driver [DRIVER] Done performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(22) @ 145: uvm_test_top.Agent.decode_in_driver [DRIVER] Sending transaction back to sequence through sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(14) @ 145: uvm_test_top.Agent.decode_in_driver [DRIVER] Requesting a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_monitor.svh(51) @ 145: uvm_test_top.Agent.decode_in_monitor [MONITOR_PROXY] npc_in: 0xa4e0, instr_dout: 0x0111000111110000, psr: 0x100, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(42) @ 145: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Transaction received: npc_in: 0xa4e0, instr_dout: 0x0111000111110000, psr: 0x100, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(44) @ 145: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Number of transactions received:           8
+# 
+# 
+# 
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(9) @ 145: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Requesting to send transaction to driver
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(13) @ 145: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Sending transaction to Driver: npc_in: 0xf91f, instr_dout: 0x1010011101001100, psr: 0x010, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(16) @ 145: uvm_test_top.Agent.decode_in_driver [DRIVER] Received a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(17) @ 145: uvm_test_top.Agent.decode_in_driver [DRIVER] Performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(21) @ 155: uvm_test_top.Agent.decode_in_driver [DRIVER] Done performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(22) @ 155: uvm_test_top.Agent.decode_in_driver [DRIVER] Sending transaction back to sequence through sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(14) @ 155: uvm_test_top.Agent.decode_in_driver [DRIVER] Requesting a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_monitor.svh(51) @ 155: uvm_test_top.Agent.decode_in_monitor [MONITOR_PROXY] npc_in: 0xf91f, instr_dout: 0x1010011101001100, psr: 0x010, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(42) @ 155: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Transaction received: npc_in: 0xf91f, instr_dout: 0x1010011101001100, psr: 0x010, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(44) @ 155: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Number of transactions received:           9
+# 
+# 
+# 
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(9) @ 155: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Requesting to send transaction to driver
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(13) @ 155: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Sending transaction to Driver: npc_in: 0x891b, instr_dout: 0x0101111000000111, psr: 0x111, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(16) @ 155: uvm_test_top.Agent.decode_in_driver [DRIVER] Received a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(17) @ 155: uvm_test_top.Agent.decode_in_driver [DRIVER] Performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(21) @ 165: uvm_test_top.Agent.decode_in_driver [DRIVER] Done performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(22) @ 165: uvm_test_top.Agent.decode_in_driver [DRIVER] Sending transaction back to sequence through sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(14) @ 165: uvm_test_top.Agent.decode_in_driver [DRIVER] Requesting a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_monitor.svh(51) @ 165: uvm_test_top.Agent.decode_in_monitor [MONITOR_PROXY] npc_in: 0x891b, instr_dout: 0x0101111000000111, psr: 0x111, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(42) @ 165: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Transaction received: npc_in: 0x891b, instr_dout: 0x0101111000000111, psr: 0x111, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(44) @ 165: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Number of transactions received:          10
+# 
+# 
+# 
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(9) @ 165: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Requesting to send transaction to driver
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(13) @ 165: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Sending transaction to Driver: npc_in: 0x82ae, instr_dout: 0x0101100110101100, psr: 0x011, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(16) @ 165: uvm_test_top.Agent.decode_in_driver [DRIVER] Received a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(17) @ 165: uvm_test_top.Agent.decode_in_driver [DRIVER] Performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(21) @ 175: uvm_test_top.Agent.decode_in_driver [DRIVER] Done performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(22) @ 175: uvm_test_top.Agent.decode_in_driver [DRIVER] Sending transaction back to sequence through sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(14) @ 175: uvm_test_top.Agent.decode_in_driver [DRIVER] Requesting a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_monitor.svh(51) @ 175: uvm_test_top.Agent.decode_in_monitor [MONITOR_PROXY] npc_in: 0x82ae, instr_dout: 0x0101100110101100, psr: 0x011, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(42) @ 175: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Transaction received: npc_in: 0x82ae, instr_dout: 0x0101100110101100, psr: 0x011, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(44) @ 175: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Number of transactions received:          11
+# 
+# 
+# 
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(9) @ 175: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Requesting to send transaction to driver
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(13) @ 175: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Sending transaction to Driver: npc_in: 0x1149, instr_dout: 0x1011010101100100, psr: 0x111, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(16) @ 175: uvm_test_top.Agent.decode_in_driver [DRIVER] Received a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(17) @ 175: uvm_test_top.Agent.decode_in_driver [DRIVER] Performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(21) @ 185: uvm_test_top.Agent.decode_in_driver [DRIVER] Done performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(22) @ 185: uvm_test_top.Agent.decode_in_driver [DRIVER] Sending transaction back to sequence through sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(14) @ 185: uvm_test_top.Agent.decode_in_driver [DRIVER] Requesting a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_monitor.svh(51) @ 185: uvm_test_top.Agent.decode_in_monitor [MONITOR_PROXY] npc_in: 0x1149, instr_dout: 0x1011010101100100, psr: 0x111, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(42) @ 185: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Transaction received: npc_in: 0x1149, instr_dout: 0x1011010101100100, psr: 0x111, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(44) @ 185: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Number of transactions received:          12
+# 
+# 
+# 
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(9) @ 185: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Requesting to send transaction to driver
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(13) @ 185: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Sending transaction to Driver: npc_in: 0x169e, instr_dout: 0x1011000100001100, psr: 0x010, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(16) @ 185: uvm_test_top.Agent.decode_in_driver [DRIVER] Received a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(17) @ 185: uvm_test_top.Agent.decode_in_driver [DRIVER] Performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(21) @ 195: uvm_test_top.Agent.decode_in_driver [DRIVER] Done performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(22) @ 195: uvm_test_top.Agent.decode_in_driver [DRIVER] Sending transaction back to sequence through sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(14) @ 195: uvm_test_top.Agent.decode_in_driver [DRIVER] Requesting a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_monitor.svh(51) @ 195: uvm_test_top.Agent.decode_in_monitor [MONITOR_PROXY] npc_in: 0x169e, instr_dout: 0x1011000100001100, psr: 0x010, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(42) @ 195: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Transaction received: npc_in: 0x169e, instr_dout: 0x1011000100001100, psr: 0x010, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(44) @ 195: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Number of transactions received:          13
+# 
+# 
+# 
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(9) @ 195: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Requesting to send transaction to driver
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(13) @ 195: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Sending transaction to Driver: npc_in: 0x1947, instr_dout: 0x1110100100001000, psr: 0x100, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(16) @ 195: uvm_test_top.Agent.decode_in_driver [DRIVER] Received a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(17) @ 195: uvm_test_top.Agent.decode_in_driver [DRIVER] Performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(21) @ 205: uvm_test_top.Agent.decode_in_driver [DRIVER] Done performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(22) @ 205: uvm_test_top.Agent.decode_in_driver [DRIVER] Sending transaction back to sequence through sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(14) @ 205: uvm_test_top.Agent.decode_in_driver [DRIVER] Requesting a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_monitor.svh(51) @ 205: uvm_test_top.Agent.decode_in_monitor [MONITOR_PROXY] npc_in: 0x1947, instr_dout: 0x1110100100001000, psr: 0x100, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(42) @ 205: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Transaction received: npc_in: 0x1947, instr_dout: 0x1110100100001000, psr: 0x100, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(44) @ 205: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Number of transactions received:          14
+# 
+# 
+# 
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(9) @ 205: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Requesting to send transaction to driver
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(13) @ 205: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Sending transaction to Driver: npc_in: 0x27f2, instr_dout: 0x0010111000001011, psr: 0x001, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(16) @ 205: uvm_test_top.Agent.decode_in_driver [DRIVER] Received a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(17) @ 205: uvm_test_top.Agent.decode_in_driver [DRIVER] Performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(21) @ 215: uvm_test_top.Agent.decode_in_driver [DRIVER] Done performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(22) @ 215: uvm_test_top.Agent.decode_in_driver [DRIVER] Sending transaction back to sequence through sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(14) @ 215: uvm_test_top.Agent.decode_in_driver [DRIVER] Requesting a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_monitor.svh(51) @ 215: uvm_test_top.Agent.decode_in_monitor [MONITOR_PROXY] npc_in: 0x27f2, instr_dout: 0x0010111000001011, psr: 0x001, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(42) @ 215: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Transaction received: npc_in: 0x27f2, instr_dout: 0x0010111000001011, psr: 0x001, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(44) @ 215: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Number of transactions received:          15
+# 
+# 
+# 
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(9) @ 215: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Requesting to send transaction to driver
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(13) @ 215: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Sending transaction to Driver: npc_in: 0x1744, instr_dout: 0x0010111000110100, psr: 0x100, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(16) @ 215: uvm_test_top.Agent.decode_in_driver [DRIVER] Received a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(17) @ 215: uvm_test_top.Agent.decode_in_driver [DRIVER] Performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(21) @ 225: uvm_test_top.Agent.decode_in_driver [DRIVER] Done performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(22) @ 225: uvm_test_top.Agent.decode_in_driver [DRIVER] Sending transaction back to sequence through sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(14) @ 225: uvm_test_top.Agent.decode_in_driver [DRIVER] Requesting a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_monitor.svh(51) @ 225: uvm_test_top.Agent.decode_in_monitor [MONITOR_PROXY] npc_in: 0x1744, instr_dout: 0x0010111000110100, psr: 0x100, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(42) @ 225: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Transaction received: npc_in: 0x1744, instr_dout: 0x0010111000110100, psr: 0x100, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(44) @ 225: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Number of transactions received:          16
+# 
+# 
+# 
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(9) @ 225: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Requesting to send transaction to driver
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(13) @ 225: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Sending transaction to Driver: npc_in: 0x7707, instr_dout: 0x0000001001001110, psr: 0x101, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(16) @ 225: uvm_test_top.Agent.decode_in_driver [DRIVER] Received a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(17) @ 225: uvm_test_top.Agent.decode_in_driver [DRIVER] Performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(21) @ 235: uvm_test_top.Agent.decode_in_driver [DRIVER] Done performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(22) @ 235: uvm_test_top.Agent.decode_in_driver [DRIVER] Sending transaction back to sequence through sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(14) @ 235: uvm_test_top.Agent.decode_in_driver [DRIVER] Requesting a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_monitor.svh(51) @ 235: uvm_test_top.Agent.decode_in_monitor [MONITOR_PROXY] npc_in: 0x7707, instr_dout: 0x0000001001001110, psr: 0x101, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(42) @ 235: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Transaction received: npc_in: 0x7707, instr_dout: 0x0000001001001110, psr: 0x101, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(44) @ 235: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Number of transactions received:          17
+# 
+# 
+# 
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(9) @ 235: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Requesting to send transaction to driver
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(13) @ 235: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Sending transaction to Driver: npc_in: 0x878a, instr_dout: 0x1110001100111101, psr: 0x010, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(16) @ 235: uvm_test_top.Agent.decode_in_driver [DRIVER] Received a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(17) @ 235: uvm_test_top.Agent.decode_in_driver [DRIVER] Performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(21) @ 245: uvm_test_top.Agent.decode_in_driver [DRIVER] Done performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(22) @ 245: uvm_test_top.Agent.decode_in_driver [DRIVER] Sending transaction back to sequence through sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(14) @ 245: uvm_test_top.Agent.decode_in_driver [DRIVER] Requesting a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_monitor.svh(51) @ 245: uvm_test_top.Agent.decode_in_monitor [MONITOR_PROXY] npc_in: 0x878a, instr_dout: 0x1110001100111101, psr: 0x010, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(42) @ 245: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Transaction received: npc_in: 0x878a, instr_dout: 0x1110001100111101, psr: 0x010, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(44) @ 245: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Number of transactions received:          18
+# 
+# 
+# 
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(9) @ 245: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Requesting to send transaction to driver
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(13) @ 245: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Sending transaction to Driver: npc_in: 0x1967, instr_dout: 0x0011101100010011, psr: 0x111, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(16) @ 245: uvm_test_top.Agent.decode_in_driver [DRIVER] Received a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(17) @ 245: uvm_test_top.Agent.decode_in_driver [DRIVER] Performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(21) @ 255: uvm_test_top.Agent.decode_in_driver [DRIVER] Done performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(22) @ 255: uvm_test_top.Agent.decode_in_driver [DRIVER] Sending transaction back to sequence through sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(14) @ 255: uvm_test_top.Agent.decode_in_driver [DRIVER] Requesting a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_monitor.svh(51) @ 255: uvm_test_top.Agent.decode_in_monitor [MONITOR_PROXY] npc_in: 0x1967, instr_dout: 0x0011101100010011, psr: 0x111, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(42) @ 255: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Transaction received: npc_in: 0x1967, instr_dout: 0x0011101100010011, psr: 0x111, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(44) @ 255: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Number of transactions received:          19
+# 
+# 
+# 
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(9) @ 255: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Requesting to send transaction to driver
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(13) @ 255: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Sending transaction to Driver: npc_in: 0xf111, instr_dout: 0x0111011101000101, psr: 0x001, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(16) @ 255: uvm_test_top.Agent.decode_in_driver [DRIVER] Received a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(17) @ 255: uvm_test_top.Agent.decode_in_driver [DRIVER] Performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(21) @ 265: uvm_test_top.Agent.decode_in_driver [DRIVER] Done performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(22) @ 265: uvm_test_top.Agent.decode_in_driver [DRIVER] Sending transaction back to sequence through sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(14) @ 265: uvm_test_top.Agent.decode_in_driver [DRIVER] Requesting a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_monitor.svh(51) @ 265: uvm_test_top.Agent.decode_in_monitor [MONITOR_PROXY] npc_in: 0xf111, instr_dout: 0x0111011101000101, psr: 0x001, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(42) @ 265: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Transaction received: npc_in: 0xf111, instr_dout: 0x0111011101000101, psr: 0x001, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(44) @ 265: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Number of transactions received:          20
+# 
+# 
+# 
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(9) @ 265: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Requesting to send transaction to driver
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(13) @ 265: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Sending transaction to Driver: npc_in: 0xaea6, instr_dout: 0x1010100001010111, psr: 0x101, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(16) @ 265: uvm_test_top.Agent.decode_in_driver [DRIVER] Received a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(17) @ 265: uvm_test_top.Agent.decode_in_driver [DRIVER] Performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(21) @ 275: uvm_test_top.Agent.decode_in_driver [DRIVER] Done performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(22) @ 275: uvm_test_top.Agent.decode_in_driver [DRIVER] Sending transaction back to sequence through sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(14) @ 275: uvm_test_top.Agent.decode_in_driver [DRIVER] Requesting a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_monitor.svh(51) @ 275: uvm_test_top.Agent.decode_in_monitor [MONITOR_PROXY] npc_in: 0xaea6, instr_dout: 0x1010100001010111, psr: 0x101, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(42) @ 275: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Transaction received: npc_in: 0xaea6, instr_dout: 0x1010100001010111, psr: 0x101, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(44) @ 275: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Number of transactions received:          21
+# 
+# 
+# 
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(9) @ 275: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Requesting to send transaction to driver
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(13) @ 275: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Sending transaction to Driver: npc_in: 0x8e90, instr_dout: 0x0000001010111111, psr: 0x111, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(16) @ 275: uvm_test_top.Agent.decode_in_driver [DRIVER] Received a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(17) @ 275: uvm_test_top.Agent.decode_in_driver [DRIVER] Performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(21) @ 285: uvm_test_top.Agent.decode_in_driver [DRIVER] Done performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(22) @ 285: uvm_test_top.Agent.decode_in_driver [DRIVER] Sending transaction back to sequence through sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(14) @ 285: uvm_test_top.Agent.decode_in_driver [DRIVER] Requesting a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_monitor.svh(51) @ 285: uvm_test_top.Agent.decode_in_monitor [MONITOR_PROXY] npc_in: 0x8e90, instr_dout: 0x0000001010111111, psr: 0x111, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(42) @ 285: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Transaction received: npc_in: 0x8e90, instr_dout: 0x0000001010111111, psr: 0x111, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(44) @ 285: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Number of transactions received:          22
+# 
+# 
+# 
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(9) @ 285: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Requesting to send transaction to driver
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(13) @ 285: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Sending transaction to Driver: npc_in: 0xb02a, instr_dout: 0x1100000010000000, psr: 0x101, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(16) @ 285: uvm_test_top.Agent.decode_in_driver [DRIVER] Received a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(17) @ 285: uvm_test_top.Agent.decode_in_driver [DRIVER] Performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(21) @ 295: uvm_test_top.Agent.decode_in_driver [DRIVER] Done performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(22) @ 295: uvm_test_top.Agent.decode_in_driver [DRIVER] Sending transaction back to sequence through sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(14) @ 295: uvm_test_top.Agent.decode_in_driver [DRIVER] Requesting a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_monitor.svh(51) @ 295: uvm_test_top.Agent.decode_in_monitor [MONITOR_PROXY] npc_in: 0xb02a, instr_dout: 0x1100000010000000, psr: 0x101, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(42) @ 295: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Transaction received: npc_in: 0xb02a, instr_dout: 0x1100000010000000, psr: 0x101, enable_decode: 0x0
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(44) @ 295: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Number of transactions received:          23
+# 
+# 
+# 
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(9) @ 295: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Requesting to send transaction to driver
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(13) @ 295: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Sending transaction to Driver: npc_in: 0xfe7c, instr_dout: 0x1010111000101110, psr: 0x110, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(16) @ 295: uvm_test_top.Agent.decode_in_driver [DRIVER] Received a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(17) @ 295: uvm_test_top.Agent.decode_in_driver [DRIVER] Performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(21) @ 305: uvm_test_top.Agent.decode_in_driver [DRIVER] Done performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(22) @ 305: uvm_test_top.Agent.decode_in_driver [DRIVER] Sending transaction back to sequence through sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(14) @ 305: uvm_test_top.Agent.decode_in_driver [DRIVER] Requesting a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_monitor.svh(51) @ 305: uvm_test_top.Agent.decode_in_monitor [MONITOR_PROXY] npc_in: 0xfe7c, instr_dout: 0x1010111000101110, psr: 0x110, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(42) @ 305: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Transaction received: npc_in: 0xfe7c, instr_dout: 0x1010111000101110, psr: 0x110, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(44) @ 305: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Number of transactions received:          24
+# 
+# 
+# 
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(9) @ 305: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Requesting to send transaction to driver
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_random_sequence.svh(13) @ 305: uvm_test_top.Agent.decode_in_sequencer@@random_sequence [SEQUENCE] Sending transaction to Driver: npc_in: 0x4885, instr_dout: 0x0001011011111101, psr: 0x111, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(16) @ 305: uvm_test_top.Agent.decode_in_driver [DRIVER] Received a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(17) @ 305: uvm_test_top.Agent.decode_in_driver [DRIVER] Performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(21) @ 315: uvm_test_top.Agent.decode_in_driver [DRIVER] Done performing signal operations
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(22) @ 315: uvm_test_top.Agent.decode_in_driver [DRIVER] Sending transaction back to sequence through sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_driver.svh(14) @ 315: uvm_test_top.Agent.decode_in_driver [DRIVER] Requesting a transaction from the sequencer
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_monitor.svh(51) @ 315: uvm_test_top.Agent.decode_in_monitor [MONITOR_PROXY] npc_in: 0x4885, instr_dout: 0x0001011011111101, psr: 0x111, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(42) @ 315: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Transaction received: npc_in: 0x4885, instr_dout: 0x0001011011111101, psr: 0x111, enable_decode: 0x1
+# UVM_INFO ../../../verification_ip/interface_packages/decode_in_pkg/src/decode_in_coverage.svh(44) @ 315: uvm_test_top.Agent.decode_in_coverage [COVERAGE] Number of transactions received:          25
+# 
+# 
+# 
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 315: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  258
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [AGENT]     1
+# [COVERAGE]    50
+# [DRIVER]   126
+# [MONITOR_PROXY]    25
+# [Questa UVM]     3
+# [RNTST]     1
+# [SEQUENCE]    50
+# [TEST_DONE]     1
+# [uvm_test_top]     1
+# ** Note: $finish    : /mnt/apps/public/COE/mg_apps/questa2023.2_2/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 315 ns  Iteration: 61  Instance: .hvl_top
+# Stopped at /mnt/apps/public/COE/mg_apps/questa2023.2_2/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# 1
+# Break in Task uvm_root::run_test at /mnt/apps/public/COE/mg_apps/questa2023.2_2/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# 18:59:52: Loading waveform header...
+# 18:59:52: Loaded  waveform header
+
+# do wave.do
+
+# coverage save test_top.ucdb
+
+# Window layout 'Default' saved in file: /mnt/ncsudrive/e/echao2/.visualizer/layout.xml
+# qwavedb_dumpvars : Simulation ending at [0 315] 0
+# End time: 19:01:53 on Oct 08,2023, Elapsed time: 0:02:13
+# Errors: 0, Warnings: 0
+# Start  : Sun 08 Oct 2023 06:59:19 PM EDT
+# End    : Sun 08 Oct 2023 07:01:53 PM EDT
+# VMSize : 1482212 kB
+# VMPeak : 1482216 kB

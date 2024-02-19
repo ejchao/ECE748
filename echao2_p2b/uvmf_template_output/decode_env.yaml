@@ -1,0 +1,35 @@
+uvmf:
+  util_components:
+    "decode_predictor" :
+      type: "predictor"
+      analysis_exports :
+        - name: "decode_in_agent_ae"
+          type: "decode_in_transaction"
+      analysis_ports :
+        - name: "decode_sb_ap"
+          type: "decode_out_transaction"
+  environments:
+    "decode" :
+      imports:
+        - name: "lc3_prediction_pkg"
+      agents :
+        - name: "decode_in_agent"
+          type: "decode_in"
+          initiator_responder: "INITIATOR"
+        - name: "decode_out_agent"
+          type: "decode_out"
+          initiator_responder: "RESPONDER"
+      analysis_components :
+        - name: "decode_pred"
+          type: "decode_predictor"
+      scoreboards :
+        - name: "decode_sb"
+          sb_type: "uvmf_in_order_scoreboard"
+          trans_type: "decode_out_transaction"
+      tlm_connections :
+        - driver: "decode_in_agent.monitored_ap"
+          receiver: "decode_pred.decode_in_agent_ae"
+        - driver: "decode_pred.decode_sb_ap"
+          receiver: "decode_sb.expected_analysis_export"
+        - driver: "decode_out_agent.monitored_ap"
+          receiver: "decode_sb.actual_analysis_export"
